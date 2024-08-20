@@ -34,8 +34,8 @@ setTimeout(() => {
     // After 600ms of game conplete .. showing modal with rekevant details 
     const modalText = isVictory ? "You foung the word" : "The correct word was"
     gameModal.querySelector("img").src = `${isVictory ? "victory" : "lost"}.gif`
-    gameModal.querySelector("img").innerText = `${isVictory ? "Congrats" : "Game Over"}`
-    gameModal.querySelector("img").innerHTML = `${modalText} <b>${currentWord}</b>`
+    gameModal.querySelector("h4").innerText = `${isVictory ? "Congrats" : "Game Over"}`
+    gameModal.querySelector("p").innerHTML = `${modalText} <b>${currentWord}</b>`
     gameModal.classList.add("show")
 }, 300);
 }

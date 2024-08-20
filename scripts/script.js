@@ -32,7 +32,7 @@ const getRandom = () => {
 const gameOver = (isVictory) =>{
 setTimeout(() => {
     // After 600ms of game conplete .. showing modal with rekevant details 
-    const modalText = isVictory ? "You foung the word" : "The correct word was"
+    const modalText = isVictory ? "You found the word" : "The correct word was"
     gameModal.querySelector("img").src = `${isVictory ? "victory" : "lost"}.gif`
     gameModal.querySelector("h4").innerText = `${isVictory ? "Congrats" : "Game Over"}`
     gameModal.querySelector("p").innerHTML = `${modalText} <b>${currentWord}</b>`
